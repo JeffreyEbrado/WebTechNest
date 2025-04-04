@@ -1,0 +1,4 @@
+1.add html program to resources/views/products/programs/typeofproduct/yournewproduct.html
+2.add Functionalities in pageLoader
+3.add yournewProduct to allProducts
+4. Change total loop by adding 1 in ShoptoProductSelected Setter

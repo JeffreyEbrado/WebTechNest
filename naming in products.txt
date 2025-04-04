@@ -1,0 +1,9 @@
+software/1.PlcEthernetInterface.html | ID's
+img: productImage      --> productSoftwareImage1 --> productPriceListed1.
+a: productName         --> productSoftwareName1  --> productListedPrice1.
+span: priceInShopShown --> productSoftwarePrice1 --> listedProductPrice1.
+
+software/2.PlcEthernetInterface.html | ID's
+img: productImage      --> productSoftwareImage2
+a: productName         --> productSoftwareName2
+span: priceInShopShown --> productSoftwarePrice2
