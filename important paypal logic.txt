@@ -1,0 +1,37 @@
+const footer = document.getElementById("footer");
+
+paypal.Buttons({
+    onClick: function(data, actions) {
+
+        console.log("PayPal button clicked!");
+
+    },
+    createOrder: function(data, actions) {
+        // ... your createOrder logic ... User is on processing the purchase
+        toggleFooter();
+    },
+    onApprove: function(data, actions) {
+        // ... your onApprove logic ... User Paid the Actual Value
+    },
+    onCancel: function (data) {
+        //your cancelOrder logic ... User cancel the puchase in process
+        footer.style.display = "block";
+    },
+    onError: function (err) {
+        // ... your onError logic ... Error in Opening Paypal
+    }
+
+}).render('#paypal-button-container');
+
+function toggleFooter() {
+    
+    if (window.innerWidth <= 990) {
+        footer.style.display = "none";
+    } else {
+        footer.style.display = "block";
+    }
+}
+
+
+// Also check when the window is resized
+window.addEventListener("resize", toggleFooter);

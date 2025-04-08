@@ -1,0 +1,2 @@
+renderPaypalAlways()             if selectPaymentDiv is display none   then clearInterval of intervalForCheckingPaymentMethodView
+paymentMethodViewCheckerAlways() if selectPaymentDiv is display active then clearInterval of intervalForRenderPaypal
